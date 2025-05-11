@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const header = `
     <header>
-      <h1><a href="/">이매일이</a></h1>
+      <h1><a href="/">E-mail</a></h1>
       <nav>
         <a href="/">홈</a> |
         <a href="/privacy.html">개인정보처리방침</a> |
