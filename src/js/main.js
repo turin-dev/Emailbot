@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   const footer = `
     <footer>
-      <p>ⓒ 2025 이매일이. 모두의 메일을 지키는 요정 💌</p>
+      <p>ⓒ 2025 E-mail. 모두의 메일을 지키는 요정 💌</p>
     </footer>
   `;
   document.body.insertAdjacentHTML("afterbegin", header);
