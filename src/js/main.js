@@ -35,9 +35,9 @@ const renderLayout = () => {
   const footer = document.createElement("footer");
   footer.innerHTML = `
     <div class="footer-inner">
-      <p>© ${new Date().getFullYear()} E-mail 알림 봇. 사용자의 선택과 권리를 최우선으로 합니다.</p>
+      <p>© ${new Date().getFullYear()} <a>team 마시멜로</a> 모든 권리 소유</p>
       <p>
-        문제나 아이디어가 있다면 언제든지 <a href="mailto:help@emailbot.example">help@emailbot.example</a>로 알려주세요.
+        문제나 아이디어가 있다면 언제든지 <a href="https://discord.gg/FRCVnR3Vtk">디스코드 서버</a>로 알려주세요.
       </p>
     </div>
   `;
