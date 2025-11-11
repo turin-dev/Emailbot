@@ -52,7 +52,8 @@ const syncToggleLabel = (button, theme) => {
   const icon = theme === "dark" ? "🌙" : "🌞";
   const label = theme === "dark" ? "다크 모드" : "라이트 모드";
   button.querySelector("span[aria-hidden='true']").textContent = icon;
-  button.querySelector(".toggle-text").textContent = `${label} 사용 중`;
+  button.querySelector(".toggle-text").textContent = label;
+  button.setAttribute("aria-label", `${label} 사용 중 · 테마 전환`);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
