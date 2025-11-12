@@ -23,6 +23,7 @@ const renderLayout = () => {
       <nav aria-label="주요 링크">
         <a href="index.html">홈</a>
         <a href="status.html">서비스 상태</a>
+        <a href="helpserver.html">지원 서버</a>
         <a href="privacy.html">개인정보처리방침</a>
         <a href="terms.html">이용약관</a>
       </nav>
