@@ -1,4 +1,4 @@
-const STATUS_API_URL = "https://mailbot.up.railway.app";
+const STATUS_API_URL = "https://mailbot.up.railway.app/api/state";
 const REQUEST_TIMEOUT = 8000;
 
 const indicator = () => document.getElementById("status-indicator");
