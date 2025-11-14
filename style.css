@@ -623,3 +623,247 @@ footer {
     width: 100%;
   }
 }
+
+.layout.dashboard {
+  gap: 2.5rem;
+}
+
+.dashboard-hero {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 640px;
+}
+
+.dashboard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.dashboard-status {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.dashboard-status[data-state="success"] {
+  color: #15803d;
+}
+
+.dashboard-status[data-state="error"] {
+  color: #b91c1c;
+}
+
+.dashboard-card {
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.75rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.dashboard-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashboard-card__header h2 {
+  margin: 0;
+}
+
+.dashboard-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.profile-card img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  object-fit: cover;
+}
+
+.profile-card dl {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+}
+
+.profile-card dt {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.profile-card dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.guild-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.guild-list__item {
+  margin: 0;
+}
+
+.guild-list__empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.guild-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.guild-button:hover,
+.guild-button:focus {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.guild-button.is-active {
+  border-color: var(--primary);
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+}
+
+.guild-button.is-active .guild-button__meta {
+  color: var(--primary-strong);
+}
+
+.guild-button__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+
+.guild-button__meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.settings-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.field-label {
+  font-weight: 600;
+}
+
+.field--toggle {
+  cursor: pointer;
+}
+
+.field select {
+  min-width: 200px;
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: inherit;
+}
+
+.switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 46px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: rgba(148, 163, 184, 0.6);
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.2);
+}
+
+.switch input:checked + .slider {
+  background-color: rgba(37, 99, 235, 0.8);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+@media (max-width: 640px) {
+  .settings-actions {
+    justify-content: stretch;
+  }
+
+  .settings-actions .btn {
+    flex: 1 1 auto;
+  }
+
+  .field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .field select {
+    width: 100%;
+  }
+}
